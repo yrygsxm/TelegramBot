@@ -1,0 +1,2 @@
+REPORT_ENDPOINT=https://your-pages-domain.example.com/weekly-ban-report
+REPORT_SECRET=replace_me

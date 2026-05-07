@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Telegram 私聊机器人</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f3ec;
+        --card: #fffdf8;
+        --ink: #1f2937;
+        --subtle: #6b7280;
+        --line: #ded7c9;
+        --accent: #146356;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at top left, rgba(20, 99, 86, 0.12), transparent 35%),
+          radial-gradient(circle at bottom right, rgba(182, 142, 84, 0.15), transparent 28%),
+          var(--bg);
+        color: var(--ink);
+        font: 16px/1.6 "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", sans-serif;
+      }
+
+      main {
+        width: min(720px, calc(100% - 32px));
+        padding: 32px;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: var(--card);
+        box-shadow: 0 20px 60px rgba(31, 41, 55, 0.08);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(28px, 5vw, 42px);
+        line-height: 1.1;
+      }
+
+      p {
+        margin: 0 0 12px;
+        color: var(--subtle);
+      }
+
+      code {
+        padding: 2px 8px;
+        border-radius: 999px;
+        background: rgba(20, 99, 86, 0.08);
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Telegram 私聊机器人已部署</h1>
+      <p>这是 Cloudflare Pages Advanced Mode 的运行页。</p>
+      <p>Webhook 默认路径为 <code>/endpoint</code>，周报内部触发路径为 <code>/weekly-ban-report</code>。</p>
+      <p>如果你看到这个页面，说明静态资源与 <code>_worker.js</code> 的回退链路都正常。</p>
+    </main>
+  </body>
+</html>

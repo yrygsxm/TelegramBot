@@ -1,0 +1,13 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "tg-private-chat-bot-weekly-report",
+  "main": "src/index.js",
+  "compatibility_date": "2026-05-06",
+  "triggers": {
+    "crons": ["0 0 * * MON"]
+  },
+  "secrets": ["REPORT_SECRET"],
+  "vars": {
+    "REPORT_ENDPOINT": "https://your-pages-domain.example.com/weekly-ban-report"
+  }
+}

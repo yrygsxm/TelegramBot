@@ -1,0 +1,14 @@
+ENV_BOT_TOKEN=123456:replace_me
+ENV_TELEGRAM_WEBHOOK_SECRET=replace_me
+ENV_INTERNAL_SECRET=replace_me
+ENV_ADMIN_UID=123456789
+ENV_TURNSTILE_SITE_KEY=replace_me
+ENV_TURNSTILE_SECRET_KEY=replace_me
+WEBHOOK_PATH=/endpoint
+PUBLIC_BASE_URL=https://tg-private-chat-bot.pages.dev
+ENABLE_NOTIFICATION=true
+CAPTCHA_ENABLED=true
+CAPTCHA_MAX_ATTEMPTS=3
+NOTIFY_INTERVAL_MS=3600000
+# START_MSG_URL=https://raw.githubusercontent.com/yrygsxm/nfd/main/data/startMessage.md
+# NOTIFICATION_URL=https://raw.githubusercontent.com/yrygsxm/nfd/main/data/notification.txt

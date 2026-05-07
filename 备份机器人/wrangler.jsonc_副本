@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "tg-private-chat-bot",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-05-06",
+  "secrets": ["ENV_BOT_TOKEN", "ENV_BOT_SECRET", "ENV_ADMIN_UID"],
+  "kv_namespaces": [
+    {
+      "binding": "nfd",
+      // 替换为你自己的 Workers KV Namespace ID
+      "id": "REPLACE_WITH_KV_NAMESPACE_ID"
+    }
+  ],
+  "vars": {
+    "WEBHOOK_PATH": "/endpoint",
+    "ENABLE_NOTIFICATION": "true",
+    "CAPTCHA_ENABLED": "true",
+    "CAPTCHA_MAX_ATTEMPTS": "3",
+    "NOTIFY_INTERVAL_MS": "3600000"
+  }
+}
