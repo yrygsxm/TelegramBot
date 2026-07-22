@@ -1,8 +1,14 @@
 const WELCOME_MENU_TEXT = `喵~欢迎使用APPDO投稿机器人🤖
-请问你有什么需求？`
+
+👋APPDO 品牌与合作：
+https://about.appdo.xyz/`
 
 const WELCOME_RESPONSES = {
-  business: '如果你需要商务合作，请你带上你的商务类型向我发送消息，我将尽快回复您。',
+  business: `感谢您选择APPDO 品牌。
+
+关于APPDO，您可以查看：https://about.appdo.xyz/
+
+如果你需要商务合作，请你带上你的商务类型向我发送消息，我将尽快回复您。`,
   unban: '如果你想解封，请带上你的用户名（@EXAMPLE）和想解封的具体群向我发送消息。',
   usage: '如果你想直接联系频道主，请直接向我发送消息，我会把你的内容转发给频道创建者。',
 }
@@ -651,7 +657,7 @@ function createBotApp(env) {
       ],
       [
         {
-          text: '直接联系频道主',
+          text: '直接联系',
           callback_data: `${CALLBACK_PREFIX.welcome}|usage`,
         },
       ],
